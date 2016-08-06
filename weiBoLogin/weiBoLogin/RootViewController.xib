@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="loginButn" destination="beE-BW-H82" id="nsE-NJ-x61"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov7-k7-duY">
+                    <rect key="frame" x="40" y="295" width="34" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beE-BW-H82">
+                    <rect key="frame" x="40" y="141" width="77" height="34"/>
+                    <state key="normal" title="loginButn"/>
+                    <connections>
+                        <action selector="getUserInfo:" destination="-1" eventType="touchUpInside" id="AJf-oo-44s"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guf-Q3-7Ia">
+                    <rect key="frame" x="233" y="87" width="72" height="34"/>
+                    <state key="normal" title="退出登陆"/>
+                    <connections>
+                        <action selector="cancelLoginIn:" destination="-1" eventType="touchUpInside" id="elD-Ft-Zp8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzU-eb-sWJ">
+                    <rect key="frame" x="40" y="366" width="144" height="34"/>
+                    <state key="normal" title="列表样式分享微博"/>
+                    <connections>
+                        <action selector="showShareActionSeet:" destination="-1" eventType="touchUpInside" id="S3w-PK-QUu"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登陆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAL-WS-Y0a">
+                    <rect key="frame" x="40" y="100" width="34" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="QAL-WS-Y0a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="0vn-ML-3sx"/>
+                <constraint firstItem="Ov7-k7-duY" firstAttribute="top" secondItem="beE-BW-H82" secondAttribute="bottom" constant="120" id="6jW-si-wyd"/>
+                <constraint firstItem="QAL-WS-Y0a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="8f6-zH-tXz"/>
+                <constraint firstAttribute="trailing" secondItem="guf-Q3-7Ia" secondAttribute="trailing" constant="70" id="C6X-tj-9EN"/>
+                <constraint firstItem="xzU-eb-sWJ" firstAttribute="top" secondItem="Ov7-k7-duY" secondAttribute="bottom" constant="50" id="JTM-cj-5md"/>
+                <constraint firstItem="beE-BW-H82" firstAttribute="top" secondItem="QAL-WS-Y0a" secondAttribute="bottom" constant="20" id="Oj5-MR-rAX"/>
+                <constraint firstItem="beE-BW-H82" firstAttribute="leading" secondItem="QAL-WS-Y0a" secondAttribute="leading" id="Zef-yK-2VH"/>
+                <constraint firstItem="Ov7-k7-duY" firstAttribute="leading" secondItem="QAL-WS-Y0a" secondAttribute="leading" id="fjq-i7-Zxq"/>
+                <constraint firstItem="guf-Q3-7Ia" firstAttribute="bottom" secondItem="QAL-WS-Y0a" secondAttribute="bottom" id="jAt-nH-Qag"/>
+                <constraint firstItem="xzU-eb-sWJ" firstAttribute="leading" secondItem="Ov7-k7-duY" secondAttribute="leading" id="qMd-6i-TAK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="339.5" y="458.5"/>
+        </view>
+    </objects>
+</document>
